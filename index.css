@@ -1,0 +1,18 @@
+body{
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.596), 
+    rgba(0, 0, 0, 0.596)
+  ),
+  url(img/baltrex-cover.jpg);
+  background-size: cover;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+  width: 650px;
+  height: 650px;
+}
