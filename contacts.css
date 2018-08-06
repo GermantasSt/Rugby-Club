@@ -1,0 +1,119 @@
+body{
+  background: 
+  linear-gradient(
+    rgba(0, 0, 0, 0.596), 
+    rgba(0, 0, 0, 0.596)
+  ),
+  url(img/ball-kick.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 120vh;
+  font-family: Roboto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-logo{
+  width: 250px;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.menu-item{
+  text-decoration: none;
+  margin: 0 12px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 0 4px 0;
+  transition: all 0.5s;
+}
+.menu-item:hover{
+  border-bottom: 1px solid lightgray;
+  color:lightgray;
+}
+.active-item{
+  color: rgb(33, 133, 33);
+}
+.mobile-menu{
+  display: none;
+}
+.mobile-menu span{
+  display: block;
+  height: 3px;
+  border-radius: 20px;
+  width: 100%;
+  background-color: white;
+  margin: 10px 0;
+}
+@media(max-width: 800px){
+  body {
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  .nav-menu{
+    position: absolute;
+    flex-direction: column;
+    right: -200px;
+    overflow: hidden;
+    transition: right 1s;
+    align-items: flex-end;
+  }
+  .menu.active .nav-menu{
+    right: 0;
+  }
+  .mobile-menu{
+    display: block;
+    width: 40px;
+    padding: 20px;
+  }
+  .menu.active{
+    overflow: visible;
+  }
+}
+@media(min-width: 801px){
+  nav{
+    align-items: center;
+  }
+}
+@media(max-width: 360px){
+  .navbar-logo{
+    width: 150px;
+  }
+  .mobile-menu{
+    padding: 10px;
+  }
+  .mobile-menu span{
+    margin: 7px 0;
+  }
+}
+.contacts{
+  width: auto;
+  height: 460px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.493);
+  margin: 20px 40px;
+  color: white;
+  padding: 30px 40px;
+}
+.contacts-heading{
+  font-family: Roboto;
+}
+.number{
+  margin: 0 10px;
+}
+.contacts-size{
+  font-size: 22px;
+}
+.container{
+  display: flex;
+}
+#map {
+  width: 60%;
+  height: 400px;
+  margin: 20px 0;
+}

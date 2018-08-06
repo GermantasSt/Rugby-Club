@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Kontaktai</title>
+  <link rel="stylesheet" href="contacts.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+
+<body>
+
+  <nav>
+    <div class="navbar-brand">
+      <a href="aboutpage.html">
+        <img class="navbar-logo" src="img/baltrex-logo.png" alt="navbar-brand">
+      </a>
+    </div>
+    <div class="menu">
+      <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-menu">
+        <a class="menu-item" href="#">Apie mus</a>
+        <a class="menu-item" href="#">Treneriai</a>
+        <a class="menu-item" href="#">Tvarkaraštis</a>
+        <a class="menu-item" href="gallery.html">Galerija</a>
+        <a class="menu-item" href="news.html">Naujienos</a>
+        <a class="menu-item active-item" href="contacts.html">Kontaktai</a>
+        <a class="menu-item" href="#">Remėjai</a>
+      </div>
+
+    </div>
+  </nav>
+  <div class="container">
+    <div class="contacts">
+      <h1 class="contacts-heading">Kontaktai</h1>
+      <br>
+      <p class="contacts-size">
+        <i class="fas fa-phone fa-2x"></i>
+        <span class="number">(8-684) 71150</span>
+      </p>
+      <p class="contacts-size">
+        <i class="far fa-envelope fa-2x"></i>
+        <span class="number">baltrexrugby@yahoo.com</span>
+      </p>
+      <p class="contacts-size">
+        <i class="fas fa-globe fa-2x"></i>
+        <span class="number">www.baltrex.lt</span>
+      </p>
+      <p class="contacts-size">
+        <i class="far fa-user fa-2x"></i>
+        <span class="number">Jonas Jonaitis</span>
+      </p>
+    </div>
+    <div id="map">
+
+    </div>
+  </div>
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Uluru
+      var uluru = { lat: 55.92157, lng: 23.31452 };
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 15, center: uluru });
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({ position: uluru, map: map });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUhuI-MF0w29JAm9oYgDrc-a6_gVdt3Ko&callback=initMap">
+  </script>
+
+  <script type="text/javascript" src="contacts.js"></script>
+</body>
+
+</html>
